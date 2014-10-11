@@ -127,8 +127,7 @@ public class Receiver extends BroadcastReceiver {
             .setSmallIcon(options.getSmallIcon())
             .setLargeIcon(options.getIcon())
             .setAutoCancel(options.getAutoCancel())
-            .setOngoing(options.getOngoing())
-            .setLights(options.getColor(), 500, 500);
+            .setOngoing(options.getOngoing());
 
         if (sound != null) {
             notification.setSound(sound);
